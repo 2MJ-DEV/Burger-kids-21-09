@@ -4,12 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/image/logo.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- ==========================CSS======================= -->
     <link rel="stylesheet" href="assets/css/menu.css" />
+
+    <!-- =============================Google fonts========================= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <!-- ==================================Title================================ -->
     <title>2MJWEB-DEV | 2MJ-FASTFOOD</title>
 </head>
 
@@ -35,6 +42,8 @@
       </div> -->
     </nav>
 
+
+    <!-- ==================================Hero section====================================== -->
     <header id="home">
         <div class="header__container">
             <div class="header__content">
@@ -53,6 +62,8 @@
         </div>
     </header>
 
+
+    <!-- =======================================Menu burger========================================== -->
     <section class="section__container destination__container" id="about">
         <h2 class="section__header">Nos Burger</h2>
         <p class="section__description">Des burgers préparés avec des ingrédients frais et de qualité. Que vous soyez
@@ -100,6 +111,10 @@
             </div>
         </div>
     </section>
+
+
+    <!-- ==================================Menu boisson======================================= -->
+
     <section class="section__container destination__container" id="about">
         <h2 class="section__header">Nos Boissons</h2>
         <p class="section__description">Accompagnez votre burger d'une boisson rafraîchissante.</p>
@@ -154,7 +169,7 @@
             </div>         -->
         </div>
     </section>
-
+    <!-- ==========================================Footer========================================== -->
     <footer id="contact">
         <div class="section__container footer__container">
             <div class="footer__col">
@@ -202,23 +217,49 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__col">
-                <h4>News letter</h4>
+            <div class="footer__col" id="reservation">
+                <h4>Réserver une Table</h4>
                 <form action="/">
-                    <input type="text" placeholder="Entrez votre email" />
-                    <button class="btn">S'abonné</button>
+                    <input type="text" placeholder="Nom Complet" />
+                    <input type="text" placeholder="Numéro de téléphone" />
+                    <input type="number" placeholder="Nombre de personne" />
+                    <input type="datetime-local" />
+                    <button class="btn">Envoyer</button>
                 </form>
             </div>
         </div>
-        <div class="footer__bar">&copy; 2024 <a href="http://">2MJULES</a>. All rights reserved.</div>
+        <div class="footer__bar">
+            <p>Copyright &copy; <span fs-hacks-element="year"></span> <a
+                    href="https://julesdevx.github.io/monPorfolio/">2MJULES</a>. Tous droits réservés.</p>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/JS/main.js"></script>
 
+
+    <!-- ===================================IonIcon================================ -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- =========================== Script compteur d'années automatiquement ========================== -->
+    <script>
+        // when the DOM is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            // set the fs-hacks selector
+            const YEAR_SELECTOR = '[fs-hacks-element="year"]';
+            // get the the span element
+            const yearSpan = document.querySelector(YEAR_SELECTOR);
+
+            if (!yearSpan) return;
+            // get the current year
+            const currentYear = new Date().getFullYear();
+
+            // set the year span element's text to the current year
+            yearSpan.innerText = currentYear.toString();
+        });
+    </script>
 </body>
 
 </html>

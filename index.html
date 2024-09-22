@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/image/logo.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -14,7 +15,7 @@
   <nav>
     <div class="nav__header">
       <div class="nav__logo">
-        <a href="#" class="logo">2MJ-FASTFOOD</a>
+        <a href="https://julesdevx.github.io/monPortfolio-dev/" class="logo">2MJ-FASTFOOD</a>
       </div>
       <div class="nav__menu__btn" id="menu-btn">
         <i class="ri-menu-line"></i>
@@ -23,9 +24,9 @@
     <ul class="nav__links" id="nav-links">
       <li><a href="#">ACCUEIL</a></li>
       <li><a href="menu.html">MENU</a></li>
-      <li><a href="#contact">SPECIALITES</a></li>
+      <li><a href="#specialite">SPECIALITES</a></li>
       <li><a href="#contact">CONTACT</a></li>
-      <li><a href="#contact">RESEVER</a></li>
+      <li><a href="#reservation">RESEVER</a></li>
     </ul>
     <!-- <div class="nav__btns">
         <button class="btn">RÉSERVER UNE TABLE</button>
@@ -39,8 +40,8 @@
         <h1>Découvrez nos burgers savoureux et nos boissons rafraîchissantes.</h1>
         <div class="header__btns">
           <button class="btn">Passer votre commande</button>
-          <a href="#">
-            <span><i class="ri-shopping-cart-2-line"></i></span>
+          <a href="#reservation" title="Réserver une table">
+            <span><i class="ri-restaurant-2-line"></i></span>
           </a>
         </div>
       </div>
@@ -50,7 +51,7 @@
     </div>
   </header>
 
-  <section class="section__container destination__container" id="about">
+  <section class="section__container destination__container" id="specialite">
     <h2 class="section__header">Nos meilleurs plats</h2>
     <p class="section__description">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eligendi quos quo blanditiis. Explicabo numquam
@@ -242,7 +243,7 @@
                 accompagner leur burger !</p>
             </div>
             <div class="client__details">
-              <a href="#"><img src="assets/client-3.jpg" alt="client"></a>
+              <a href="#"><img src="assets/image/JIT.webp" alt="client"></a>
               <div>
                 <h4>ILUNGA John</h4>
                 <h5>Etudiant à <a href="https://upl-univ.ac/">UPL Lubumbashi</a></h5>
@@ -264,7 +265,7 @@
                 pour un bon repas rapide !</p>
             </div>
             <div class="client__details">
-              <a href="#"><img src="assets/client-3.jpg" alt="client"></a>
+              <a href="#"><img src="assets/image/SEPHORA.webp" alt="client"></a>
               <div>
                 <h4>NSEYA Sephora</h4>
                 <h5>Etudiante à <a href="https://upl-univ.ac/">UPL Lubumbashi</a></h5>
@@ -285,10 +286,10 @@
               <p>Excellente ambiance, les frites au fromage fondu sont à tomber ! Je recommande vivement.</p>
             </div>
             <div class="client__details">
-              <a href="https://julesdevx.github.io/monPorfolio/"><img src="assets/client-3.jpg" alt="client"></a>
+              <a href="#"><img src="assets/image/BLESS.webp" alt="client"></a>
               <div>
-                <h4>MUKADI Jules</h4>
-                <h5>Etudiant à <a href="https://upl-univ.ac/">UPL Lubumbashi</a></h5>
+                <h4>SHIMUBANGA Blessing</h4>
+                <h5>Etudiante à <a href="https://upl-univ.ac/">UPL Lubumbashi</a></h5>
               </div>
             </div>
           </div>
@@ -330,7 +331,7 @@
           quis laboriosam aperiam accusamus vitae!</p>
         <ul class="footer__socials">
           <li>
-            <a href="#"><i class="ri-linkedin-fill"></i></ion-icon></a>
+            <a href="https://www.linkedin.com/in/jules-mukadi-467015320/"><i class="ri-linkedin-fill"></i></ion-icon></a>
           </li>
           <li>
             <a href="#"><i class="ri-github-fill"></i><i class="ri-github-full"></i></a>
@@ -347,7 +348,7 @@
           <li><a href="menu.html">MENU</a></li>
           <li><a href="#contact">SPECIALITES</a></li>
           <li><a href="#contact">CONTACT</a></li>
-          <li><a href="#contact">RESEVER</a></li>
+          <li><a href="#reservation">RESEVER</a></li>
         </ul>
       </div>
       <div class="footer__col">
@@ -367,16 +368,20 @@
           </li>
         </ul>
       </div>
-      <div class="footer__col">
-        <h4>News letters</h4>
+      <div class="footer__col" id="reservation">
+        <h4>Réserver une Table</h4>
         <form action="/">
-          <input type="text" placeholder="Entrez votre email" />
-          <button class="btn">S'abonné</button>
+          <input type="text" placeholder="Nom Complet" />
+          <input type="text" placeholder="Numéro de téléphone" />
+          <input type="number" placeholder="Nombre de personne" />
+          <input type="datetime-local" />
+          <button class="btn">Envoyer</button>
         </form>
       </div>
     </div>
-    <div class="footer__bar">&copy; 2024 <a href="https://julesdevx.github.io/monPorfolio/">2MJULES</a>. Tous droits
-      réservés.</div>
+    <div class="footer__bar">
+      <p>Copyright &copy; <span fs-hacks-element="year"></span> <a href="https://julesdevx.github.io/monPortfolio-dev/">2MJULES</a>. Tous droits réservés.</p>
+    </div>
   </footer>
 
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -385,6 +390,23 @@
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    // when the DOM is ready
+    document.addEventListener('DOMContentLoaded', function () {
+      // set the fs-hacks selector
+      const YEAR_SELECTOR = '[fs-hacks-element="year"]';
+      // get the the span element
+      const yearSpan = document.querySelector(YEAR_SELECTOR);
+
+      if (!yearSpan) return;
+      // get the current year
+      const currentYear = new Date().getFullYear();
+
+      // set the year span element's text to the current year
+      yearSpan.innerText = currentYear.toString();
+    });
+  </script>
 </body>
 
 </html>

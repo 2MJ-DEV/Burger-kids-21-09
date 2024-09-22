@@ -267,6 +267,14 @@ header::before {
   transition: 0.3s;
 }
 
+.destination__rating span a {
+  color: var(--white);
+}
+
+.client__rating a {
+  color: #ffffff;
+}
+
 .destination__card:hover .destination__rating {
   background-color: var(--primary-color-dark);
 }
